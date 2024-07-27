@@ -21,7 +21,7 @@ const Register = () => {
   }]
 
   return (
-    <div className="md:pt-[90px] md:pb-[20px] max-md:py-[50px] bg-[linear-gradient(0deg,#fff_0%,#c5eaf9_100%)]">
+    <div className="md:pt-[50px] md:pb-[20px] max-md:py-[50px] bg-[linear-gradient(0deg,#fff_0%,#c5eaf9_100%)]">
       <div className="container mx-auto md:px-[40px] max-md:px-[15px]">
         <div className="max-w-[500px] px-[10px] md:px-[30px] py-[40px] relative bg-white mx-auto w-full rounded-[10px] border">
           <h2 className="mb-[20px] text-center md:text-left">Sign Up</h2>
@@ -74,11 +74,11 @@ const Register = () => {
                 </button>
               </div>
             </div>
-            <Button label={`Log In`} />
+            <Button label={`Sign Up`} />
             <p className="text-center md:text-left mt-[10px]">
-              Do not have an account?{" "}
+              Already have an account?{" "}
               <Link to="/login" className="text-[#00f]">
-                Sign Up
+                Log In
               </Link>
             </p>
           </div>
