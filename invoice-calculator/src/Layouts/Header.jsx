@@ -8,12 +8,16 @@ const Header = ({ onToggleSidebar }) => {
     <header className="bg-gray-100 text-black flex items-center w-screen h-14 fixed top-0 left-0 z-50 border-b border-black">
       <div className="flex items-center justify-between px-4 w-full">
         {/* Left Side: Logo */}
+        <div className="flex items-center space-x-4">
+          <button onClick={onToggleSidebar} className="text-2xl">
+            <FaBars />
+          </button>
         <img 
           src="https://res.cloudinary.com/harshdubey1198/image/upload/v1722064766/logo-light_ipdke7.png" 
           alt="logo" 
           className="w-auto h-9 rounded-lg filter invert" 
         />
-        
+        </div>
         {/* Center: Navigation */}
         <nav className="hidden md:flex space-x-4">
           <Link to="/" className="hover:text-gray-600">Home</Link>
@@ -23,10 +27,7 @@ const Header = ({ onToggleSidebar }) => {
         </nav>
         
         {/* Right Side: Toggle Sidebar and Profile */}
-        <div className="flex items-center space-x-4">
-          <button onClick={onToggleSidebar} className="text-2xl">
-            <FaBars />
-          </button>
+     
           <div className="items-center hidden md:flex space-x-4">
             <img
               src="https://res.cloudinary.com/harshdubey1198/image/upload/v1721475588/dummy-userImages/bqof59zlzkampcaxpws9.jpg"
@@ -38,7 +39,7 @@ const Header = ({ onToggleSidebar }) => {
               <p className="text-xs text-gray-600">Admin</p>
             </div>
           </div>
-        </div>
+        
       </div>
     </header>
   );

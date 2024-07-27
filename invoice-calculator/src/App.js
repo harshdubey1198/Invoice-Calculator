@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Login from './pages/login'
 import Register from './pages/register'
 import Home from './pages/Home'
+import './App.css'
 
 function App() {
   return (
