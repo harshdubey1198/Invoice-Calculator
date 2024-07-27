@@ -30,7 +30,7 @@ function Login() {
             <p className="text-center md:text-left mt-[10px]">
               Do not have an account?{" "}
               <Link to="/register" className="text-[#00f]">
-                Sign Up
+                Register
               </Link>
             </p>
           </div>
