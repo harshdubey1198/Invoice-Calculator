@@ -27,7 +27,7 @@ const Header = ({ onToggleSidebar }) => {
           <button onClick={onToggleSidebar} className="text-2xl">
             <FaBars />
           </button>
-          <div className="flex items-center hidden md:flex space-x-4">
+          <div className="items-center hidden md:flex space-x-4">
             <img
               src="https://res.cloudinary.com/harshdubey1198/image/upload/v1721475588/dummy-userImages/bqof59zlzkampcaxpws9.jpg"
               alt="profile"
