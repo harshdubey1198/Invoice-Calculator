@@ -9,14 +9,14 @@ const Header = ({ onToggleSidebar }) => {
       <div className="flex items-center justify-between px-4 w-full">
         {/* Left Side: Logo */}
         <div className="flex items-center space-x-4">
-          <button onClick={onToggleSidebar} className="text-2xl">
-            <FaBars />
-          </button>
         <img 
           src="https://res.cloudinary.com/harshdubey1198/image/upload/v1722064766/logo-light_ipdke7.png" 
           alt="logo" 
           className="w-auto h-9 rounded-lg filter invert" 
         />
+          <button onClick={onToggleSidebar} className="text-2xl">
+            <FaBars />
+          </button>
         </div>
         {/* Center: Navigation */}
         <nav className="hidden md:flex space-x-4">
