@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from '../Layouts/Header'
+// import Header from '../Layouts/Header'
 import Label from '../components/custom/label'
 import TextInput from '../components/custom/textinput'
 import Button from '../components/custom/button'
@@ -29,7 +29,7 @@ function Login() {
             <p className="text-center md:text-left mt-[10px]">
               Do not have an account?{" "}
               <Link to="/register" className="text-[#00f]">
-                Sign Up
+                Register
               </Link>
             </p>
           </div>
