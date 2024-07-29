@@ -4,6 +4,8 @@ import TextInput from "../components/custom/textinput";
 import Button from "../components/custom/button";
 import { Link } from "react-router-dom";
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa";
+import Error from "../components/custom/error";
+
 
 const Register = () => {
   // Initialize formInput with useState
@@ -88,6 +90,7 @@ const Register = () => {
       <div className="container mx-auto md:px-[40px] max-md:px-[15px]">
         <div className="max-w-[500px] px-[10px] md:px-[30px] py-[40px] relative bg-white mx-auto w-full rounded-[10px] border">
           <h2 className="mb-[20px] text-center md:text-left">Sign Up</h2>
+          {error && <Error message={error}/>}
           <div>
             <div className="grid grid-cols-2 gap-[10px] mb-[10px]">
               <div>
